@@ -1,10 +1,14 @@
 {
   "name": "dove-ui-server",
   "version": "1.0.0",
-  "description": "Test NodeJs and Javascript codes.",
+  "description": "Test Nodejs and Javascript codes.",
   "main": "index.js",
   "scripts": {
-    "test": "node server"
+    "start": "pm2 start pm2.config.js --env development",
+    "restart": "pm2 restart pm2.config.js",
+    "reload": "pm2 reload pm2.config.js",
+    "stop": "pm2 stop pm2.config.js",
+    "delete": "pm2 delete pm2.config.js"
   },
   "repository": {
     "type": "git",
