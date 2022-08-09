@@ -9,11 +9,9 @@ const root = __dirname
 // path.resolve() is always pointing at what the file(paths.js) has used it!
 let paths = {
   uikit: path.resolve(root, '../','uikit'),
-  webpack: path.resolve(root, '../','doveUiServer'),
-  webpack_pro: path.resolve(root, '../', 'doveUiServer', 'dist'),
+  webpack: path.resolve(root, '../','doveUtils', 'dist'),
 }
 
 paths.uikit_pro = path.resolve(paths.uikit, 'dist')
-paths.webpack_pro = path.resolve(paths.webpack, 'dist');
 
 module.exports = paths

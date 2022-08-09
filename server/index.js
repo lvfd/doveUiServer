@@ -14,7 +14,7 @@ app.locals.startTime = new Date()
 app.use('/doveuikit', require('./router-uikit'))
 
 // for webpack:
-// app.use('/doveutils', webpack)
+app.use('/doveutils', require('./router-webpack'))
 
 
 // Running log:
