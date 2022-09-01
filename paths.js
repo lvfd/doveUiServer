@@ -10,6 +10,7 @@ const root = __dirname
 let paths = {
   uikit: path.resolve(root, '../','uikit'),
   webpack: path.resolve(root, '../','doveUtils', 'dist'),
+  plugin: path.resolve(root, '../', 'doveUtils', 'plugin'),
 }
 
 paths.uikit_pro = path.resolve(paths.uikit, 'dist')

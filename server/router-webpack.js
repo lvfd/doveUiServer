@@ -12,5 +12,6 @@ const publicSend = utilsExpress.publicSend
 const webpack = express.Router()
 
 webpack.use(express.static(paths.webpack))
+webpack.use('/plugin', express.static(paths.plugin))
 
 module.exports = webpack
