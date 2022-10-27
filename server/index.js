@@ -8,7 +8,7 @@ const port = 3013
 
 app.locals.title = 'Dove UI Server'
 app.locals.startTime = new Date()
-
+app.disable('x-powered-by')
 
 // for uikit:
 app.use('/doveuikit', require('./router-uikit'))
